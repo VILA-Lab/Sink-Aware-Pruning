@@ -1,7 +1,7 @@
 # Sink-Aware Pruning for Diffusion Language Models
 
 <p align="center">
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a>
+  <a href="https://www.arxiv.org/abs/2602.17664"><img src="https://img.shields.io/badge/arXiv-2602.17664-b31b1b?style=flat-square&logo=arxiv&logoColor=white" alt="arXiv"></a>
   &nbsp;
   <a href="#"><img src="https://img.shields.io/badge/Code-Coming%20Soon-orange?style=flat-square&logo=github&logoColor=white" alt="Code"></a>
   &nbsp;
@@ -105,7 +105,7 @@ If you find this work useful, please consider citing:
 @article{myrzakhan2025sinkawarepruning,
   title     = {Sink-Aware Pruning for Diffusion Language Models},
   author    = {Myrzakhan, Aidar and Li, Tianyi and Guo, Bowei and Tang, Shengkun and Shen, Zhiqiang},
-  journal   = {arXiv preprint arXiv:XXXX.XXXXX},
-  year      = {2025}
+  journal   = {arXiv preprint arXiv:2602.17664},
+  year      = {2026}
 }
 ```
