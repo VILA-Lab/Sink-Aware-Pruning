@@ -47,15 +47,6 @@ We show this assumption **does not transfer** to DLMs:
 2. 🎯 **Identifies unstable sinks** whose positions shift significantly across timesteps
 3. ✂️ **Prunes them** — reducing redundant global attention without hurting quality
 
-### Pipeline
-
-<p align="center">
-  <img src="figs/pipeline.png" width="100%" alt="Sink-Aware Pruning Pipeline">
-</p>
-<p align="center"><b>Figure:</b> Overview of the Sink-Aware Pruning pipeline. <b>(1)</b> Compute attention mass to identify sink tokens and derive per-token down-weighting factors. <b>(2)</b> Update activations by zeroing out sink-token rows. <b>(3)</b> Apply standard pruning metrics (Wanda or SparseGPT) using the modified activations. <b>(4)</b> Make final pruning decisions based on the updated importance scores.</p>
-
----
-
 ## 🔑 Key Findings
 
 ### Sink positions are unstable in DLMs
@@ -74,6 +65,17 @@ Sink-Aware Pruning consistently **matches or outperforms** Wanda and SparseGPT b
 > Gains are most pronounced at **higher sparsity**, where avoiding mispriced sink weights has the highest impact on model utility.
 
 ---
+
+
+### Pipeline
+
+<p align="center">
+  <img src="figs/pipeline.png" width="100%" alt="Sink-Aware Pruning Pipeline">
+</p>
+<p align="center"><b>Figure:</b> Overview of the Sink-Aware Pruning pipeline. <b>(1)</b> Compute attention mass to identify sink tokens and derive per-token down-weighting factors. <b>(2)</b> Update activations by zeroing out sink-token rows. <b>(3)</b> Apply standard pruning metrics (Wanda or SparseGPT) using the modified activations. <b>(4)</b> Make final pruning decisions based on the updated importance scores.</p>
+
+---
+
 
 ## 📊 Results
 
